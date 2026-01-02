@@ -1,4 +1,4 @@
-import Button from "../globals/Button";
+import Button from "@components/globals/Button.jsx";
 
 export default function Hero() {
   return (
