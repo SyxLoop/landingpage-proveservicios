@@ -1,5 +1,5 @@
-import FlagIcon from "../../assets/flag-alt.svg";
-import BinocularsIcon from "../../assets/binoculars.svg";
+import FlagIcon from "@/assets/flag-alt.svg";
+import BinocularsIcon from "@/assets/binoculars.svg";
 
 export default function Hero() {
   return (
