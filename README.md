@@ -7,6 +7,9 @@
 
 Este es un rediseño de la Landing Page actual de [proveservicios.com](https://proveservicios.com) en la cual, partiendo de pocos recursos multimedia, se busca reorganizar apropiadamente los diversos elementos para brindar una excelente experiencia de usuario.
 
+> [!WARNING]
+> Sigue en desarrollo, por lo que algunas secciones se verán incompletas
+
 ## Características
  - Diseño totalmente responsivo.
  - Formulario de contacto funcional.
@@ -15,5 +18,26 @@ Este es un rediseño de la Landing Page actual de [proveservicios.com](https://p
 - **HTML5 / CSS3**
 - **JavaScript** (ES6+)
 - **Frameworks: React, TailwindCSS**
+- **Build tool: Vite**
+- **JavaScript, TypeScript and JSX toolkit: bun**
 
 ## Instalación y Uso Local
+
+Para usarse de manera local se debe clonar este repositorio:
+
+### HTTPS:
+
+```
+https://github.com/SyxLoop/landingpage-proveservicios.git
+```
+### SSH:
+
+```
+https://github.com/SyxLoop/landingpage-proveservicios.git
+```
+Despues se ejecutan los siguientes comandos:
+
+```
+bun install
+bun run dev
+```
