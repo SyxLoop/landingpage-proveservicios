@@ -1,3 +1,33 @@
+import Card from "@components/globals/Card.jsx"
+
+const services = [
+  {
+    icon: "",
+    title: "Venta de Combustible",
+    description: "Alta calidad para su vehículo"
+  },
+  {
+    icon:"",
+    title: "Atención al Cliente",
+    description: "Atención con personal calificado y comprometido"
+  },
+  {
+    icon: "",
+    title: "Aditivos y Lubricantes para Automóviles",
+    description: "Suministro de aditivos y lubricantes para automóviles"
+  },
+  {
+    icon: "",
+    title: "Recibos Electronicos",
+    description: "Contamos con tecnología INNOVA"
+  },
+  {
+    icon: "",
+    title: "Puntos Colombia",
+    description: "Reclama y redime tus puntos Colombia"
+  }
+]
+
 export default function Services() {
   return (
     <section className="w-full h-dvh bg-accent/10">
