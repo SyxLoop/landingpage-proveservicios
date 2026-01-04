@@ -1,11 +1,12 @@
 import Button from "@components/globals/Button.jsx";
+import heroImage from "@/assets/proveservicios.jpg"
 
 export default function Hero() {
   return (
     <section className="relative flex w-full h-dvh">
       <div className="absolute inset-0 z-0 bg-black">
         <img
-          src="../../public/proveservicios.jpg"
+          src={heroImage}
           alt="Auto servicio"
           className="w-full h-full object-cover opacity-40"
         />
