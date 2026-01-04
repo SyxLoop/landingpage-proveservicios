@@ -1,33 +1,34 @@
 import Card from "@components/globals/Card";
+import { Fuel, Handshake, Droplets, ReceiptText,Circle } from "lucide-react";
 
 const servicesData = [
   {
     id: 1,
-    icon: "",
+    icon: <Fuel size={32} />,
     title: "Venta de Combustible",
     description: "Alta calidad para su vehículo",
   },
   {
     id: 2,
-    icon: "",
+    icon: <Handshake size={32} />,
     title: "Atención al Cliente",
     description: "Atención con personal calificado y comprometido",
   },
   {
     id: 3,
-    icon: "",
+    icon: <Droplets size={32} />,
     title: "Aditivos y Lubricantes para Automóviles",
     description: "Suministro de aditivos y lubricantes para automóviles",
   },
   {
     id: 4,
-    icon: "",
+    icon: <ReceiptText size={32} />,
     title: "Recibos Electronicos",
     description: "Contamos con tecnología INNOVA",
   },
   {
     id: 5,
-    icon: "",
+    icon: <Circle size={32} />,
     title: "Puntos Colombia",
     description: "Reclama y redime tus puntos Colombia",
   },
@@ -50,6 +51,11 @@ export default function Services() {
           {servicesData.map((service) => (
             <Card>
               <Card.Body>
+                <div
+                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-accent/20`}
+                >
+                  {service.icon}
+                </div>
                 <Card.Title className="text-surface">
                   {service.title}
                 </Card.Title>
