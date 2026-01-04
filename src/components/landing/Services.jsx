@@ -35,7 +35,7 @@ const servicesData = [
 
 export default function Services() {
   return (
-    <section className="w-full h-dvh bg-accent/25">
+    <section className="w-full h-full py-12 md:py-0 md:h-dvh bg-accent/25">
       <div className="flex flex-col h-full place-items-center place-content-center">
         <div className="flex flex-col place-items-center place-content-center mb-14 gap-8 font-bold">
           <h2 className="text-3xl md:text-5xl text-surface mb-12">
@@ -46,7 +46,7 @@ export default function Services() {
             Mastercard.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+        <div className="grid w-4/5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
           {servicesData.map((service) => (
             <Card>
               <Card.Body>
