@@ -1,5 +1,5 @@
 import Button from "@components/globals/Button.jsx";
-import heroImage from "@/assets/proveservicios.jpg";
+import heroImage from "@/assets/proveservicios.jpg"
 
 export default function Hero() {
   return (
