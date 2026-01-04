@@ -35,18 +35,18 @@ const servicesData = [
 
 export default function Services() {
   return (
-    <section className="w-full h-full py-14 md:py-0 md:h-dvh bg-accent/25">
+    <section className="w-full h-full md:h-dvh lg:h-dvh py-14 md:py-0 bg-accent/35">
       <div className="flex flex-col h-full place-items-center place-content-center">
-        <div className="flex flex-col place-items-center place-content-center mb-8 gap-6 font-bold">
-          <h2 className="text-3xl md:text-5xl text-surface">
+        <div className="flex flex-col place-items-center place-content-center mb-8 md:mb-16 gap-6 md:gap-14 font-bold">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl text-surface">
             Nuestros Servicios
           </h2>
-          <p className="w-3/4 text-center text-lg  md:text-[20px] whitespace-normal text-gray font-medium">
+          <p className="w-3/4 text-center text-lg md:text-2xl whitespace-normal text-gray font-medium">
             Aceptamos todas las tarjetas de crédito y débito, incluyendo Visa y
             Mastercard.
           </p>
         </div>
-        <div className="grid w-4/5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+        <div className="grid w-3/4 md:w-2/3 lg:w-4/5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
           {servicesData.map((service) => (
             <Card>
               <Card.Body>
