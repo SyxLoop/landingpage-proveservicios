@@ -17,7 +17,7 @@ const servicesData = [
   {
     id: 3,
     icon: <Droplets size={32} />,
-    title: "Aditivos y Lubricantes para Automóviles",
+    title: "Aditivos y Lubricantes",
     description: "Suministro de aditivos y lubricantes para automóviles",
   },
   {
@@ -36,18 +36,18 @@ const servicesData = [
 
 export default function Services() {
   return (
-    <section className="w-full h-full md:h-dvh lg:h-dvh py-14 md:py-0 bg-accent/35">
-      <div className="flex flex-col h-full place-items-center place-content-center">
-        <div className="flex flex-col place-items-center place-content-center mb-8 md:mb-16 gap-6 md:gap-14 font-bold">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl text-surface">
+    <section className="flex w-full place-items-center place-content-center bg-accent/50">
+      <div className="flex flex-col h-full lg:h-dvh place-items-center place-content-center my-18">
+        <div className="flex flex-col place-items-center place-content-center gap-8 mb-8 lg:mb-12 font-bold">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl text-surface">
             Nuestros Servicios
           </h2>
-          <p className="w-3/4 text-center text-lg md:text-2xl whitespace-normal text-gray font-medium">
+          <p className="w-3/4 text-center text-lg whitespace-normal text-gray font-medium">
             Aceptamos todas las tarjetas de crédito y débito, incluyendo Visa y
             Mastercard.
           </p>
         </div>
-        <div className="grid w-3/4 md:w-2/3 lg:w-4/5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+        <div className="grid w-3/4 grid-cols-1 md:w-3/4 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
           {servicesData.map((service) => (
             <Card>
               <Card.Body>
