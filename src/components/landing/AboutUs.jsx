@@ -1,13 +1,40 @@
 import FlagIcon from "@/assets/flag-alt.svg";
 import BinocularsIcon from "@/assets/binoculars.svg";
 
-export default function Hero() {
+const infoMisionVision = [
+  {
+    title: "Misión",
+    text: "Garantizar a nuestros clientes los mejores estándares de seguridad y calidad en los productos y servicios con una relación costo beneficio para nuestros clientes e inversionistas.",
+    icon: FlagIcon,
+    alt: "Icono de bandera representando la misión",
+  },
+  {
+    title: "Visión",
+    text: "Proyectarnos como el mejor distribuidor minorista de combustible por cumplir y satisfacer las necesidades y expectativas del mercado, manteniendo la excelencia en el servicio y la calidad de nuestros productos.",
+    icon: BinocularsIcon,
+    alt: "Icono de bandera representando la misión",
+  },
+];
+
+const InfoBlock = ({ icon, alt, title, text }) => (
+  <div className="flex flex-col w-full md:w-1/2 items-center text-center">
+    <div className="mb-4 p-4 bg-accent/25 rounded-full inline-block">
+      <img src={icon} alt={alt} className="w-12 h-12" />
+    </div>
+    <h3 className="text-2xl text-surface font-bold pb-4">{title}</h3>
+    <p className="max-w-md text-lg text-gray leading-relaxed">{text}</p>
+  </div>
+);
+
+export default function AboutUs() {
   return (
-    <section className="flex w-full">
-      <div className="flex flex-col h-full md:h-dvh place-items-center place-content-center py-12 md:py-0 gap-12">
-        <div className="flex flex-col place-items-center place-content-center font-bold">
-          <h2 className="text-3xl md:text-5xl text-surface mb-12">Quienes Somos</h2>
-          <p className="w-3/4 text-left md:text-justify text-[18px] whitespace-normal text-gray font-medium">
+    <section className="flex w-full justify-center items-center py-16 bg-white">
+      <div className="container mx-auto px-4 flex flex-col min-h-dvh justify-center items-center gap-16">
+        <div className="flex flex-col items-center text-center max-w-4xl">
+          <h2 className="text-3xl md:text-4xl text-surface mb-8 font-bold">
+            Quienes Somos
+          </h2>
+          <p className="text-lg text-gray leading-relaxed text-justify md:text-center">
             Una empresa dedicada a la distribución de combustibles y
             lubricantes, con procedimientos seguros y equipos de alta
             tecnología, con lo cual generamos seguridad y confianza en nuestros
@@ -20,33 +47,10 @@ export default function Hero() {
             implementación y aplicación de las mejores prácticas ambientales.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row w-full gap-16 md:gap-0">
-          <div className="flex flex-col w-full  md:w-1/2 place-items-center">
-            <img
-              src={FlagIcon}
-              className="w-20 mb-4 p-4 bg-accent/25 rounded-full"
-            />
-            <h2 className="text-2xl text-surface font-bold pb-4">Misión</h2>
-            <p className="w-2/3 text-left text-[18px] text-gray whitespace-normal">
-              Garantizar a nuestros clientes los mejores estándares de seguridad
-              y calidad en los productos y servicios con una relación costo
-              beneficio para nuestros clientes e inversionistas.
-            </p>
-          </div>
-
-          <div className="flex flex-col w-full md:w-1/2 place-items-center">
-            <img
-              src={BinocularsIcon}
-              className="w-20 mb-4 p-4 bg-accent/25 rounded-full"
-            />
-            <h2 className="text-2xl text-surface font-bold pb-4">Visión</h2>
-            <p className="w-2/3 text-left text-[18px] text-gray whitespace-normal">
-              Proyectarnos como el mejor distribuidor minorista de combustible
-              por cumplir y satisfacer las necesidades y expectativas del
-              mercado, manteniendo la excelencia en el servicio y la calidad de
-              nuestros productos.
-            </p>
-          </div>
+        <div className="flex flex-col md:flex-row w-full gap-12 md:gap-8 justify-center">
+          {infoMisionVision.map((block, index) => (
+            <InfoBlock key={index} {...block} />
+          ))}
         </div>
       </div>
     </section>
