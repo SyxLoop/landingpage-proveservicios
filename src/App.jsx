@@ -1,6 +1,7 @@
 import Hero from "./components/landing/Hero";
 import AboutUs from "./components/landing/AboutUs";
 import Services from "./components/landing/Services";
+import ImageCarousel from "./components/landing/ImageCarousel";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Hero />
       <AboutUs />
       <Services />
+      <ImageCarousel />
     </>
   );
 }
