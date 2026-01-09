@@ -48,8 +48,8 @@ export default function Services() {
           </p>
         </div>
         <div className="grid w-3/4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {servicesData.map((service) => (
-            <Card>
+          {servicesData.map((service, index) => (
+            <Card key={index}>
               <Card.Body>
                 <div
                   className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-accent/20`}
