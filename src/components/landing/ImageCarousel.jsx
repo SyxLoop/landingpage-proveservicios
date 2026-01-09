@@ -23,6 +23,7 @@ const images = [
 
 export default function ImageCarousel() {
   const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
 
   const next = useCallback(
     () =>
@@ -41,9 +42,10 @@ export default function ImageCarousel() {
   );
 
   useEffect(() => {
-    const timer = setInterval(next, 5000);
+    if (paused) return;
+    const timer = setInterval(next, 3000);
     return () => clearInterval(timer);
-  }, [next]);
+  }, [next, paused]);
 
   return (
     <section className="flex flex-col w-full min-h-dvh justify-center items-center py-16 bg-white">
@@ -59,7 +61,11 @@ export default function ImageCarousel() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto group">
+        <div
+          className="relative max-w-5xl mx-auto group"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
           <div className="relative aspect-2/1 overflow-hidden rounded-lg">
             <div
               className="flex h'full w'full transition-transform duration-700 ease-in-out will-change-transform"
