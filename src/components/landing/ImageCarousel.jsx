@@ -43,7 +43,7 @@ export default function ImageCarousel() {
 
   useEffect(() => {
     if (paused) return;
-    const timer = setInterval(next, 3000);
+    const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
   }, [next, paused]);
 
