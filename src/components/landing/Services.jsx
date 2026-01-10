@@ -36,7 +36,7 @@ const servicesData = [
 
 export default function Services() {
   return (
-    <section className="flex w-full justify-center items-center py-16 bg-surface/5">
+    <section className="flex w-full justify-center items-center py-16 bg-accent/20">
       <div className="container mx-auto px-4 flex flex-col min-h-dvh justify-center items-center gap-16">
         <div className="flex flex-col justify-center items-center gap-8 max-w-4xl">
           <h2 className="text-3xl md:text-4xl text-center text-surface font-bold">
@@ -56,9 +56,9 @@ export default function Services() {
               <Card>
                 <Card.Body className="flex flex-col items-center">
                   <div
-                    className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-surface/15`}
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-accent/20`}
                   >
-                    <service.icon size={32} className="stroke-surface/75" />
+                    <service.icon size={32} className="stroke-accent" />
                   </div>
                   <Card.Title className="text-center text-surface/75">
                     {service.title}
