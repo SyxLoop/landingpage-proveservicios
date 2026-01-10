@@ -47,23 +47,25 @@ export default function Services() {
             Mastercard.
           </p>
         </div>
-        <div className="grid w-3/4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6 w-full lg:w-3/4">
           {servicesData.map((service, index) => (
-            <Card key={index}>
-              <Card.Body>
-                <div
-                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-accent/20`}
-                >
-                  {service.icon}
-                </div>
-                <Card.Title className="text-surface">
-                  {service.title}
-                </Card.Title>
-                <Card.Text className="text-gray">
-                  {service.description}
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <div key={index} className="w-full md:w-87.5 flex flex-col">
+              <Card>
+                <Card.Body>
+                  <div
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-accent/20`}
+                  >
+                    {service.icon}
+                  </div>
+                  <Card.Title className="text-surface">
+                    {service.title}
+                  </Card.Title>
+                  <Card.Text className="text-gray">
+                    {service.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
