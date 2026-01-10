@@ -1,7 +1,7 @@
 const Card = ({ children, className = "", ...props }) => {
   return (
     <div
-      className={`bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex flex-col transition-all hover:shadow-lg ${className}`}
+      className={`bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex-1 flex flex-col transition-all hover:shadow-lg ${className}`}
       {...props}
     >
       {children}
