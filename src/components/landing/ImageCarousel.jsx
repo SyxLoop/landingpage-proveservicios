@@ -85,16 +85,18 @@ export default function ImageCarousel() {
           </div>
 
           <Button
-            text={<ChevronLeft size={32} className="stroke-white" />}
             className="opacity-0 group-hover:opacity-100 absolute left-4 top-1/2 -translate-y-1/2 transition-all bg-accent/25 hover:bg-accent/75 backdrop-blur-sm z-10"
             onClick={prev}
-          />
+          >
+            <ChevronLeft size={32} className="stroke-white" />
+          </Button>
 
           <Button
-            text={<ChevronRight size={32} className="stroke-white" />}
             className="opacity-0 group-hover:opacity-100 absolute right-4 top-1/2 -translate-y-1/2 transition-all bg-accent/25 hover:bg-accent/75 backdrop-blur-sm z-10"
             onClick={next}
-          />
+          >
+            <ChevronRight size={32} className="stroke-white" />
+          </Button>
 
           <div className="flex justify-center gap-2 mt-6">
             {images.map((_, index) => (
