@@ -21,8 +21,8 @@ const InfoBlock = ({ icon, alt, title, text }) => (
     <div className="mb-4 p-4 bg-accent/25 rounded-full inline-block">
       <img src={icon} alt={alt} className="w-12 h-12" />
     </div>
-    <h3 className="text-2xl text-surface font-bold pb-4">{title}</h3>
-    <p className="max-w-md text-lg text-gray leading-relaxed">{text}</p>
+    <h3 className="text-2xl lg:text-3xl text-surface font-bold pb-4">{title}</h3>
+    <p className="max-w-md text-lg lg:text-xl text-gray leading-relaxed">{text}</p>
   </div>
 );
 
@@ -31,10 +31,10 @@ export default function AboutUs() {
     <section className="flex w-full justify-center items-center py-16 bg-white">
       <div className="container mx-auto px-4 flex flex-col min-h-dvh justify-center items-center gap-16">
         <div className="flex flex-col items-center text-center max-w-4xl">
-          <h2 className="text-3xl md:text-4xl text-surface mb-8 font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-surface mb-8 font-bold">
             Quienes Somos
           </h2>
-          <p className="text-lg text-gray leading-relaxed text-justify md:text-center">
+          <p className="text-lg lg:text-xl text-gray leading-relaxed text-justify md:text-center">
             Una empresa dedicada a la distribución de combustibles y
             lubricantes, con procedimientos seguros y equipos de alta
             tecnología, con lo cual generamos seguridad y confianza en nuestros
