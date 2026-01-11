@@ -9,33 +9,49 @@ export default function CompanyPolicies() {
         <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-surface">
           Conoce Nuestras Políticas
         </h2>
-        <div className="flex flex-col md:flex-row w-full min-[736px]:w-90 md:w-3/4 gap-8 lg:gap-16">
+        <div className="flex flex-col md:flex-row w-full min-[736px]:w-90 md:w-3/4 gap-8 md:gap-10 lg:gap-16">
           <Card>
-            <Card.Body>
-              <Card.Title className="text-center text-surface">
-                Tratamiento de Datos Personales
+            <Card.Body className="flex items-center gap-4">
+              <Card.Title className="text-center my-4 text-surface">
+                Tratamiento de Datos <br />
+                Personales
               </Card.Title>
-              <Card.Image src="/"></Card.Image>
-              <Button className="flex justify-center items-center gap-4">
+              <Card.Image src="/manual.png" className="w-3/4" />
+              <Button
+                className={
+                  "flex justify-center items-center w-full border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
+                }
+              >
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center">
-                  <Download size={28} className="stroke-accent" />
+                  <Download
+                    size={28}
+                    className="stroke-accent group-hover:stroke-white transition delay-50"
+                  />
                 </div>
-                <p>Descargar PDF</p>
+                <p className="text-sm lg:text-lg">Descargar PDF</p>
               </Button>
             </Card.Body>
           </Card>
           <Card>
-            <Card.Body>
-              <Card.Title className="text-center text-surface">
-                Politicas Laborales
+            <Card.Body className="flex items-center gap-4">
+              <Card.Title className="text-center my-4 text-surface">
+                Políticas <br />
+                Laborales
               </Card.Title>
-              <Card.Image src="/"></Card.Image>
-              <Card.Footer>
-                <Button>
-                  <Download />
-                  <p>Descargar PDF</p>
-                </Button>
-              </Card.Footer>
+              <Card.Image src="/manual.png" className="w-3/4" />
+              <Button
+                className={
+                  "flex justify-center items-center w-full border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
+                }
+              >
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                  <Download
+                    size={28}
+                    className="stroke-accent group-hover:stroke-white transition delay-50"
+                  />
+                </div>
+                <p className="text-sm lg:text-lg">Descargar PDF</p>
+              </Button>
             </Card.Body>
           </Card>
         </div>

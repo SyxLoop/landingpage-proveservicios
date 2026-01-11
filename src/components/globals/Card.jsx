@@ -11,7 +11,7 @@ const Card = ({ children, className = "", ...props }) => {
 
 const Image = ({ src, alt, className = "", ...props }) => {
   return (
-    <div className={`relative w-full h-48 overflow-hidden ${className}`}>
+    <div className={`relative overflow-hidden ${className}`}>
       <img
         src={src}
         alt={alt}
