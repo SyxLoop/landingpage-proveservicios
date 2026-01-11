@@ -51,10 +51,10 @@ export default function ImageCarousel() {
     <section className="flex flex-col w-full min-h-dvh justify-center items-center py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance text-surface">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-balance text-surface">
             Zona de Servicios
           </h2>
-          <p className="text-lg text-gray max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-gray max-w-2xl mx-auto">
             Contamos con una zona de servicios a cargo de nuestros aliados:
             <br />
             Lavado de vehículos, servicentro
