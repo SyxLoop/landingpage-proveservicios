@@ -1,5 +1,5 @@
 export default function Button({
-  text,
+  children,
   onClick,
   disabled,
   className
@@ -13,7 +13,7 @@ export default function Button({
   };
   return (
     <button style={styleButton} onClick={onClick} disabled={disabled} className={className}>
-      {text}
+      {children}
     </button>
   );
 }
