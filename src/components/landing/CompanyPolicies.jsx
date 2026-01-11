@@ -16,10 +16,10 @@ export default function CompanyPolicies() {
                 Tratamiento de Datos <br />
                 Personales
               </Card.Title>
-              <Card.Image src="/manual.png" className="w-3/4" />
+              <Card.Image src="/manual.png" className="w-3/5 h-full" />
               <Button
                 className={
-                  "flex justify-center items-center w-full border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
+                  "flex justify-center items-center md:w-1/2 border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
                 }
               >
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center">
@@ -38,10 +38,10 @@ export default function CompanyPolicies() {
                 Políticas <br />
                 Laborales
               </Card.Title>
-              <Card.Image src="/manual.png" className="w-3/4" />
+              <Card.Image src="/pl1.jpg" className="w-3/5 h-full" />
               <Button
                 className={
-                  "flex justify-center items-center w-full border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
+                  "flex justify-center items-center w-full md:w-1/2 border border-gray hover:bg-accent hover:border-transparent hover:text-white gap-4 my-2 transition delay-50 group"
                 }
               >
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center">
