@@ -39,10 +39,10 @@ export default function Services() {
     <section className="flex w-full justify-center items-center py-16 bg-accent/20">
       <div className="container mx-auto px-4 flex flex-col min-h-dvh justify-center items-center gap-16">
         <div className="flex flex-col justify-center items-center gap-8 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl text-center text-surface font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-center text-surface font-bold">
             Nuestros Servicios
           </h2>
-          <p className="w-3/4 text-center text-lg text-gray">
+          <p className="w-3/4 text-center text-lg lg:text-xl text-gray">
             Aceptamos todas las tarjetas de crédito y débito, incluyendo Visa y
             Mastercard.
           </p>
