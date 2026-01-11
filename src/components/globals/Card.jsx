@@ -44,7 +44,7 @@ const Title = ({ children, className = "", ...props }) => {
 const Text = ({ children, className = "", ...props }) => {
   return (
     <p
-      className={`text-gray-600 text-sm leading-relaxed ${className}`}
+      className={`text-gray-600 text-sm lg:text-lg leading-relaxed ${className}`}
       {...props}
     >
       {children}
